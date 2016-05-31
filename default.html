@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en">
+    <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>نظام ابن الهيثم لإدارة شئون الطلاب - جامعة الاسكندرية  - مصر</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="/static/css/template/style.css?dd">
+        <link rel="stylesheet" href="/static/css/template/en.css?dd">
+        <link rel="stylesheet" href="/static/css/template/ar.css?dd">
+        <script type="text/javascript" src="/static/js/json2.js?v=aswed" charset="UTF-8">
+        </script>
+        <link rel="stylesheet" type="text/css" media="screen,projection,print" href="/static/plugins/jquery-ui-1.8.23.custom/css/cupertino/jquery-ui-1.8.23.custom.css" />
+        <script type="text/javascript" src="/static/js/jquery/jquery-1.6.4.min.js">
+        </script>
+        <script type="text/javascript" src="/static/js/jquery/jquery.blockUI.js">
+        </script>
+        <script type="text/javascript" src="/static/js/jquery/jquery.alerts.js">
+        </script>
+        <script type="text/javascript" src="/static/js/jquery/jquery.validate.js">
+        </script>
+        <script type="text/javascript" src="/static/plugins/jquery-ui-1.8.23.custom/js/jquery-ui-1.8.23.custom.min.js">
+        </script>
+        <script type="text/javascript" src="/static/plugins/multiple-file-upload/jquery.MultiFile.js">
+        </script>
+        <link rel="stylesheet" type="text/css" media="screen,projection,print" href="/static/css/jquery.alerts.css" />
+        <link rel="stylesheet" type="text/css" media="screen,projection,print" href="/static/css/jquery.checkboxtree.css" />
+        <link rel="stylesheet" href="/static/css/index.css" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="/static/css/sdmenu.css"/>
+        <style type="text/css">
+            @font-face {font-family:
+                'Cuprum';
+                font-style: normal;
+                font-weight:
+                400;
+                src:
+                url(./fonts/8M2QeT_Qy8TQOSVUvuKOPw.eot);
+                src:
+                local('Cuprum'), local('Cuprum-Regular'), url(./fonts/8M2QeT_Qy8TQOSVUvuKOPw.eot) format('embedded-opentype'), url(./fonts/mn4VPBSqQXCLGhD-YfHBHw.woff) format('woff');
+            }
+            @font-face {font-family:
+                'Cuprum';
+                font-style: italic;
+                font-weight:
+                400;
+                src:
+                url(./fonts/7DjDP6rx5o7wZQrf28kiNQ.eot);
+                src:
+                local('Cuprum Italic'), local('Cuprum-Italic'), url(./fonts/7DjDP6rx5o7wZQrf28kiNQ.eot) format('embedded-opentype'), url(./fonts/y4vfqo0Ocb6_53BQZVcsMw.woff) format('woff');
+            }
+        #EmailMsg
+        {  
+            text-align: center;
+            border: 1px solid #5ab1cd;
+            margin: 0 auto;
+	    margin-top: 10px;
+            padding: 15px;	    
+            width: 78%;
+            display:block;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
+        }
+        </style>
+
+        </head>
+        <body class="">
+            <div id="body-container"style="display:none">
+                <div id="container" style="">
+                    <header>
+                    <div>
+                    <a id="logo"><span id="sysNameSpn"style="
+ font-size: 25px;  color: #FBFE1F;  font-weight: bold;
+
+"> 									
+                        </span><span id="sysNameForSpn" style="
+ font-size: 17px;  color: white;  font-weight: bold;
+ display: block;
+ text-indent: 77px;
+
+">       									
+                        </span></a>
+                    <div id="profile">
+                        <div id="user-data">
+                        </div>
+                        <div id="user-notifications">
+                            <ul style="width: 280px;position: relative;">
+                                <li>
+                                    <a id="mailTD" class="messages-16 tt-top-center"style="right: 0px;"><!--<span class="notification">3</span>--></a>
+                                </li>
+                                <li>
+                                    <a id="onlineUsersTD" class="users-16 tt-top-center" style=""></a>
+                                </li>
+                                <li>
+                                    <a id="certificate" class="certificate-16 tt-top-center" style=""></a>
+                                </li>
+                                <li>
+                                    <a id="loginTrys" class="userslog-16 tt-top-center" style=""></a>
+                                </li>
+                                <li>
+                                    <a id="ChangePassTD" class="lock-16 tt-top-center" style=""></a>
+                                </li>
+                                <li>
+                                    <a id="scopeDiv" class="overview-16 tt-top-center" style=""></a>
+                                </li>
+                                <li>
+                                    <a id="onlineUserDataDiv" class="profile-16 tt-top-center" style=""></a>
+                                </li>
+                                <li>
+                                    <a id="logout" class="logout-16 tt-top-center" style=""></a>
+                                </li>
+                            </ul>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                    <div id="main-navigation">
+                        <span id="ScopeName" style="cursor: default;"></span>
+                    </div>
+                    <div id="copyright_container">
+                        <span style='font-size:10px;color:#57aaec'><span id="copyright-default"></span><a href='http://citc.mans.edu.eg' style='' id="copyright-default-link"></a> &nbsp;-&nbsp;<a href='http://www.mans.edu.eg/' style='' id="copyright-default-unvlink"></a></span>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    </header>
+                    <div id="main">
+                        <div id="sub-navigation">
+                            <!--<div id="navigation-search">
+                            <form>
+                            <input type="text" name="search" id="search" placeholder="Search" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                            </form>
+                            </div>
+                            -->
+                            <ul id="nav-one">
+                                <!--<li><a class="tt-top-center">7</a><span>new tickets</span></li>
+                                <li><a class="blue tt-top-center">12</a><span>new tasks</span></li>
+                                <li><a class="green tt-top-center">3</a><span>completed milestones</span></li>-->
+                            </ul>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                        <div id="HomePageMainContent">
+                            <div id="body-section" style="">
+                                <div id="SideMenu">
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                                <div id="content-container">
+                                    <div id="BasicData">
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                    </footer>
+                </div>
+                <!--! end of #container -->
+            </div>
+            <!--[if lt IE 8 ]>
+                <link rel="stylesheet" href="/static/css/template/ie7.css"/>
+            <![endif]-->             
+            <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+            <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+            Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+            For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+            <SCRIPT src="/static/js/modernizr-1.7.min.js">    </script>
+            <script type="text/javascript">
+                
+                //-----------//
+                //----For Chrome Cashing-----//
+                $.getScript("/static/js/jquery/jquery.barcode.0.3.js?num="+new Date().getTime());
+                $.getScript("/static/js/jquery/jquery.checkboxtree.js?num=" + new Date().getTime());
+                $.getScript("/static/js/general.js?num=" + new Date().getTime(), function(){
+                    $.getScript("/static/js/words.js?num=" + new Date().getTime(), function(){
+                        $.getScript("/static/js/index.js?num=" + new Date().getTime(), function(){
+                            $.getScript("/static/js/sdmenu.js?num=" + new Date().getTime(), function(){
+                                $(document).ready(function(){
+                                    var viewOk = false;
+                                    $.ajax({
+                                        url: "/getJCI",
+                                        data: {
+                                            param0: "general.General",
+                                            param1: "GetUserData"//,
+                                            //param2 : userID
+                                        },
+                                        type: "post",
+                                        cache: false,
+                                        async: false,
+                                        success: function(d){
+                                            var data = jQuery.parseJSON(d);
+                                            if (data) {
+                                                Lang = data[0].Lang;
+                                                LoadDatePicker()
+                                                if (parseInt(data[0].passChange) != 0) {
+                                                    viewOk = true;
+                                                }
+                                                setInterval(getNewMessages, 60000);
+                                                getNewMessages();
+                                                window.CKEDITOR_BASEPATH = '/static/plugins/ckeditor_3.6.4/ckeditor/';
+                                                var _mv = 1;
+                                                $.when(getCSS("/static/css/mail.css?num=" + _mv), getCSS("/static/plugins/tagedit/css/jquery.tagedit.css?num=" + _mv), $.get("/static/plugins/multiple-file-upload/jquery.form.js?num=" + _mv), $.when($.get("/static/plugins/ckeditor_3.6.4/ckeditor/ckeditor.min.js?num=" + _mv)).done(function(){
+                                                    $.get("/static/plugins/ckeditor_3.6.4/ckeditor/skins/kama/skin.js?num=" + _mv)
+                                                }), $.get("/static/plugins/tagedit/js/jquery.autoGrowInput.js?num=" + _mv), $.get("/static/plugins/tagedit/js/jquery.tagedit.js?num=" + _mv), $.get("/static/js/mail/mail.js?num=" + _mv)).done(function(){
+                                                
+                                                    getNewMessages();
+                                                });
+                                            }
+                                        },
+                                        error: function(){
+                                            //error();
+                                            window.location = "/static/index.html";
+                                        },
+                                        complete: function(jqXHR, textStatus){
+                                            if (viewOk) {
+                                                LoadAppVariables();
+                                                DrawInterface();
+                                                FloatingMenu();
+                                            }
+                                            else {
+                                                $('body').html('<div id="RDialogDiv"></div>');
+                                                var PassData = "";
+                                                PassData += "<table id='ChangePassTbl' dir='" + getName('rtl|ltr') + "'>";
+                                                PassData += "	<tr><td><span>" + getName('الرقم القومي|National ID') + "</span></td><td><input id='nId' name='nId' type='text' class='required'/></td></tr> ";
+                                                PassData += "	<tr><td><span>" + getName('كلمة المرور القديمة |Old password') + "</span></td><td><input id='oldPassTxt' name='oldPassTxt' type='password' class='required'/></td></tr> ";
+                                                PassData += "	<tr><td><span>" + getName('كلمة المرور الجديدة|new Password') + "</span></td><td><input id='PassTxt' name='PassTxt' type='password' class='required'/></td></tr> ";
+                                                PassData += "	<tr><td><span>" + getName('اعادة كلمة المرور الجديدة|Retype new Password') + "</span></td><td><input id='RePassTxt' name='RePassTxt' type='password' class='required'/></td></tr> ";
+                                                PassData += "</table>";
+                                                $('#RDialogDiv').html(PassData);
+                                                $('#RDialogDiv').dialog({
+                                                    modal: true,
+                                                    autoOpen: true,
+                                                    title: getName('تغيير كلمة المرور|Change password'),
+                                                    closeOnEscape: true,
+                                                    zIndex: 3999,
+                                                    width: 500,
+                                                    height: 300,
+                                                    resizable: true,
+                                                    position: 'center',
+                                                    show: 'fade',
+                                                    hide: 'fade',
+                                                    buttons: {
+                                                        'Continue': function(){
+                                                            if ($("#oldPassTxt").val() == $("#PassTxt").val()) {
+                                                                jAlert(getName('برجاء تغيير كلمة المرور الجديدة|Please change the new pass word'));
+                                                                return;
+                                                            }
+                                                            if (($("#PassTxt").val() == $("#RePassTxt").val())) {
+                                                                var strcomplex = complexPass($("#PassTxt").val());
+                                                                if (strcomplex == 'true') {
+                                                                    //change password
+                                                                    var Data = {};
+                                                                    Data["UserPassword"] = $("#PassTxt").val();
+                                                                    Data["oldPassword"] = $("#oldPassTxt").val();
+                                                                    Data["UID"] = $('#nId').val();
+                                                                    
+                                                                    $.ajax({
+                                                                        url: "/getJCI",
+                                                                        type: "post",
+                                                                        cache: false,
+                                                                        data: {
+                                                                            param0: "systemAdmin.sysUsersData",
+                                                                            param1: "ChangePasswordOnce",
+                                                                            param2: dicToString(Data)
+                                                                        },
+                                                                        success: function(d){
+                                                                            var data = jQuery.parseJSON(d);
+                                                                            if (data) {
+                                                                                if (data.Msg != 'error') {
+                                                                                    jAlert(getName('تم الحفظ|saving completed'))
+                                                                                    $(this).delay(500).dialog("close");
+                                                                                    $("#RDialogDiv").remove();
+                                                                                    location.reload();
+                                                                                }
+                                                                                else {
+                                                                                    jAlert(getName(data.errDet));
+                                                                                    return;
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        error: function(){
+                                                                            error();
+                                                                        }
+                                                                    });
+                                                                }
+                                                                else {
+                                                                    jAlert(getName(strcomplex))
+                                                                    return;
+                                                                }
+                                                                
+                                                            }
+                                                            else {
+                                                                jAlert(getName('كلمة المرور لا تساوي اعادتها|Passwords do not match .'))
+                                                                
+                                                            }
+                                                            
+                                                        }
+                                                    },
+                                                    close: function(event, ui){
+                                                        window.location = "/static/index.html";
+                                                        RemoveGenericDialog();
+                                                    }
+                                                });
+                                                
+                                            }
+                                        }
+                                        
+                                    });
+                                    $("#HomePageMainContent").ajaxComplete(function(event, request, settings){
+                                        AdjustSystemHeight();
+                                    });
+                                    
+                                    
+                                });
+                            });
+                        });
+                    });
+                });
+                function getText(txt, Lang){
+                    if (!txt) {
+                        return '';
+                    }
+                    if (txt.indexOf('|') != -1) {
+                        return txt.split('|')[(Lang == 'A' ? 0 : 1)];
+                    }
+                    else {
+                        return txt;
+                    }
+                }
+                
+                function DrawInterface(){
+                    var titlesLocaize;
+                    if (Lang == 'A') {
+                        titlesLocaize = {
+                            "logout": "إضغط هنا لتسجيل الخروج",
+                            "onlineUsersTD": "العاملون علي النظام",
+                            "ChangePassTD": "تغير كلمه المرور",
+                            "mailTD": "بريد النظام",
+                            "onlineUserDataDiv": "تعديل بيانات المستخدم",
+                            "scopeDiv": "تعديل المجال"
+                        }
+                        $('body').removeClass('en').addClass('ar');
+                        $('#copyright-default').text("جميع الحقوق محفوظة ©");
+                        $('#copyright-default-unvlink').text("مركز تقنية الاتصالات والمعلومات");
+                        $('#copyright-default-link').text("جامعة المنصورة");
+                        /*$('#logout').text('الخروج');*/
+                    }
+                    else {
+                        titlesLocaize = {
+                            "logout": "Click here to LogOut....",
+                            "onlineUsersTD": "Online users",
+                            "ChangePassTD": "Change password",
+                            "mailTD": "Mail System",
+                            "onlineUserDataDiv": "Edit user data",
+                            "scopeDiv": "Edit scope"
+                        }
+                        $('body').removeClass('ar').addClass('en');
+                        $('#copyright-default').text("All Rights Reserved ©");
+                        $('#copyright-default-unvlink').text("CITC");
+                        $('#copyright-default-link').text("Mansoura University");
+                        /*$('#logout').text('logout');	*/
+                    }
+                    
+                    for (key in titlesLocaize) {
+                        $('#' + key).attr('title', titlesLocaize[key]);
+                    }
+                    
+                    //-------Draw Menu sub system from DB-------//
+                    
+                    MenuSubSys(); //index.js
+                    //
+                    //$("#UserName").html(username);
+                    TreeMenu();
+                    $('#user-data').html('<img id="userImg" style="width: 30px;"/>')
+                    /*$('#userName').html((Lang=='A'?'مرحبا ':'Welcome ')+'<span style="color: rgba(0, 0, 255, 0.8);font-weight: bold;">'+getText(username,Lang)+'</span>');*/
+                    $("#logout").click(function(){
+                        $.ajax({
+                            url: "/studentLogOut",
+                            type: "POST",
+                            cache: false,
+                            async: false,
+                            beforeSend: function(){
+                                $(".ui-effects-wrapper").remove();
+                            },
+                            success: function(data){
+                                window.location = "/static/index.html";
+                            },
+                            complete: function(jqXHR, textStatus){
+                                $.unblockUI();
+                                $(document).ajaxStop($.unblockUI);
+                                return false;
+                            },
+                            error: function(request, status, error){
+                                str = " <div>error </div>";
+                            }
+                        });
+                    });
+                    
+                    
+                    // hadeel 23/9
+                    $('#loginTrys').click(function(){
+                        var div = $(this);
+                        $.ajax({
+                            url: "/getJCI",
+                            type: "POST",
+                            cache: false,
+                            async: false,
+                            data: {
+                                param0: "Reports.RegisterCert",
+                                param1: "UserLoginTrys"
+                            },
+                            beforeSend: function(){
+                                $(".ui-effects-wrapper").remove();
+                            },
+                            success: function(d){
+                                var str = "<table align=center style='direction:" + dir + ";width:80%'>"
+                                data = jQuery.parseJSON(d);
+                                if (data) {
+                                    var oldSt, newSt = '';
+                                    for (var i = 0; i < data.length; i++) {
+                                        oldSt = data[i].tryStatus;
+                                        if (oldSt != newSt) {
+                                            str += '<tr><td colsapn=3 style="height:35px;padding:3px">' + (oldSt == 'True' ? getName('اخر محاولة دخول صحيحة|Last successful login') : getName(' محاولة دخول خطأ |Failed login')) + '<td></tr>'
+                                            str += '<tr style="height:25px;background-color:#5ab1cd;color:white;border:1px solid #5ab1cd;"><th >' + getName('اليوم|Day') + '</th><th>' + getName('الوقت|Time') +
+                                            '</th><th > IP </th></tr>'
+                                        }
+                                        str += '<tr style="height:35px;border:1px solid #5ab1cd;"><td style="text-align:center">' + data[i].logDate.split(' ')[0] + '</td><td style="direction:ltr;text-align:center">' + data[i].logDate.split(' ')[1] + ' ' + data[i].logDate.split(' ')[2] +
+                                        '</td><td style="text-align:center"> ' +
+                                        data[i].IP +
+                                        '</td></tr>'
+                                        newSt = oldSt;
+                                    }
+                                }
+                                str += "</table>"
+                                DesignFrame(getName('محاولات دخول سابقة |Previous login Trys'), str, true);
+                            },
+                            complete: function(jqXHR, textStatus){
+                                $.unblockUI();
+                                $(document).ajaxStop($.unblockUI);
+                                return false;
+                            },
+                            error: function(request, status, error){
+                                str = " <div>error </div>";
+                            }
+                        });
+                    
+                    
+                    });
+                    $('#certificate').click(function(){
+                        var str = 'للتخلص من الرسالة الخاصة بشهادة الدخول إلى النظام (https) اضغط على الرابط التالي ' +
+                        "<a href='#' style='color: #0275B1;' onclick='$.download(\"/download\",\"url=std.reg\",\"post\" );'>شهادة امن النظام</a>" +
+                        ' مع ملاحظة قبول أي رسائل من الويندوز '
+                        str += "";
+                        DesignFrame(getName('شهادة الأمن |Security certificate'), str, true);
+                    });
+                    $('#onlineUsersTD').click(function(){
+                        var div = $(this);                        
+                        $.ajax({
+                            url: "/getJCI",
+                            type: "POST",
+                            cache: false,
+                            async: false,
+                            data: {
+                                param0: "general.General",
+                                param1: "getOnline"
+                            },
+                            beforeSend: function(){
+                                $(".ui-effects-wrapper").remove();
+                            },
+                            success: function(d){
+                                var str = ""
+                                data = jQuery.parseJSON(d);
+                                if (data) {
+                                    str += '<div><label class=TdLabel >المستخدمون: ' + data.length + ' مستخدم </label></div><table><tr>'
+                                    var logCase = ''
+                                    var userlist = [];
+                                    for (var i = 0; i < data.length; i++) {
+                                        //if(logCase!=data[i].logedout.split(' ')[0]) str+='<br><hr style="width:80%">'
+                                        //if ($.inArray(data[i].id, userlist) >= 0) 
+                                        //    continue;
+                                        str += (i % 4 == 0 ? '</tr><tr>' : '') + '<td>'
+                                        str += '<div align="center" title="' + (data[i].uporal != '313.' ? getName('مدخل مرشد|Advisor') : getName(' مستخدم نظام|User')) + '" class="' + (data[i].logedout ? "getLogDetails logedOut" : "TdData getLogDetails") +
+                                        '"uID="' +
+                                        data[i].id +
+                                        '" style="display:inline-block;border:thin solid #E1E1E1;width:100px;height:130px;padding:3px;' +
+                                        ((data[i].uporal == '313.' && !data[i].logedout) ? ('background-color:#FFE8E1;') : ((data[i].uporal =='User-Stuff'&& !data[i].logedout)?'background-color:#BBDEB9;':'')) +//#BBDEB9
+                                        '">' +
+                                        '<img src="/static/StuffImages/' +
+                                        data[i].id +
+                                        '.jpg" id="usrImg' +
+                                        data[i].id +
+                                        '_' +
+                                        i +
+                                        '"> ' +
+                                        '<br>' +
+                                        '<span style="display: inline-block;white-space:normal !important;width:100px;height:50px;"  >' +
+                                        data[i].title +
+                                        ' ' +
+                                        getName(data[i].Username) +
+                                        ' </span>' +
+                                        '</div>' +
+                                        '<td>'
+                                        if (data[i].uporal == '313.') 
+                                            userlist.push(data[i].id);
+                                        //logCase=data[i].logedout.split(' ')[0];
+                                        //empty.gif
+                                    }
+                                    str += "</tr></table>"
+                                }
+                                div.append('<div id=DivDialogonline></div>')
+                                $('#DivDialogonline').html(str);
+                                $('#DivDialogonline').find('img').each(function(x){
+                                
+                                    $(this).error(function(){
+                                        $(this).attr('src', '/static/images/empty.gif')
+                                    })
+                                });
+                                $('.getLogDetails').click(function(){
+                                    var usrName = $(this).find('span').eq(0).text();
+                                    var islogedout =$(this).hasClass('logedOut');
+                                    $.ajax({
+                                        url: "/getJCI",
+                                        type: "POST",
+                                        cache: false,
+                                        async: false,
+                                        data: {
+                                            param0: "general.General",
+                                            param1: "getOnlineDetails",
+                                            param2: $(this).attr('uID')
+                                        },
+                                        beforeSend: function(){
+                                            $(".ui-effects-wrapper").remove();
+                                        },
+                                        success: function(d){
+                                            var data1 = jQuery.parseJSON(d);
+                                            if (data1 && data1[0]) {
+                                                var tbl = '<div id="logDetails"><table>'
+                                                tbl+=(islogedout?"<tr><td colspan=2 style='font-weight:bold;text-align:center'>"+getName("الخروج |Logout ")+(":")+data1[0].logoutDate+"</td></tr>":"");
+                                                for (var i = 0; i < data1.length; i++) {
+                                                    tbl += '<tr><td>' + getName(data1[i]['sysName']) + '</td><td>' + data1[i]['logDate'] + '</td></tr>'
+                                                }
+                                                tbl += '</table></div>'
+                                                div.append(tbl)
+                                                $('#logDetails').dialog({
+                                                
+                                                    autoOpen: true,
+                                                    title: usrName,
+                                                    closeOnEscape: true,
+                                                    zIndex: 4001,
+                                                    width: 300,
+                                                    height: 300,
+                                                    resizable: true,
+                                                    show: 'fade',
+                                                    hide: 'fade',
+                                                    close: function(event, ui){
+                                                        $('#logDetails').remove();
+                                                        RemoveGenericDialog();
+                                                    }
+                                                });
+                                            }
+                                        }
+                                    });
+                                });
+                                $('#DivDialogonline').dialog({
+                                    modal: true,
+                                    autoOpen: true,
+                                    title: getName('العاملون على النظام |online users '),
+                                    closeOnEscape: true,
+                                    zIndex: 3999,
+                                    width: 500,
+                                    height: 500,
+                                    resizable: true,
+                                    position: 'center',
+                                    show: 'fade',
+                                    hide: 'fade',
+                                    close: function(event, ui){
+                                        $('#DivDialogonline').html('');
+                                        RemoveGenericDialog();
+                                    }
+                                });
+                            },
+                            complete: function(jqXHR, textStatus){
+                                $.unblockUI();
+                                $(document).ajaxStop($.unblockUI);
+                                return false;
+                            },
+                            error: function(request, status, error){
+                                str = " <div>error </div>";
+                            }
+                        });
+                    });
+                    
+                    $('#mailTD').click(function(){
+                        $('#mailSubSys').closest('a').trigger('click', [function(){
+                                    $('#urmCount').closest('a').trigger('click');
+                                    
+                                }
+                        ]);
+                    });
+                    //----------Show dialoges-------------//
+                    $('#onlineUserDataDiv').click(function(){
+                        ShowUserDataDialog();
+                    });
+                    $('#scopeDiv').click(function(){
+                        ShowScopeDialog();
+                        if ($("#DivDialogScopeName").length == 0) {
+                            $("#ScopeName").append('<Div id="DivDialogScopeName"></Div>');
+                        }
+                    });
+                    $("#ChangePassTD").click(function(){
+                        ShowChangePassDialog();
+                    });
+                    $("#userImg").error(function(){
+                        $("#userImg").remove();
+                        $('#user-data').addClass('empty');
+                    }).attr("src", "/static/StuffImages/" + _UserID + ".jpg");
+                    $('#user-notifications a').mouseenter(function(){
+                        var width = '28px';
+                        var dir = (Lang == 'A' ? 'right' : 'left');
+                        var css = {
+                            height: '28px',
+                            width: width,
+                            'z-index': 10,
+                            top: '-1px'
+                        }
+                        css[dir] = (($(this).css(dir) - 1) + 'px');
+                        $(this).css(css);
+                    }).mouseleave(function(){
+                        var width = '26px';
+                        var dir = (Lang == 'A' ? 'right' : 'left');
+                        var css = {
+                            height: '26px',
+                            width: width,
+                            'z-index': 1,
+                            top: '0px'
+                        }
+                        css[dir] = (($(this).css(dir) + 1) + 'px');
+                        $(this).css(css);
+                    });
+                    $('#sysNameSpn').css('font-family', 'Cuprum').html((Lang == "A") ? "" : "Ibn al-Hitham <br>Student Information System");
+                    //$('#sysNameForSpn').css({'font-family':'Cuprum','color': '#FBFE1F'}).text(((Lang == "A") ? "لإدارة شئون الطلاب" : "Student Information System"));
+                    $("#body-container").show();
+                    AdjustSystemHeight();
+                    $('#loginTrys').trigger('click');// hadeel 23/9                    
+                    DrawDefault();
+       
+                }
+                function DrawDefault(){
+                    var str= '';
+                    str += ' <div id=\"EmailMsg\" align=\"center\" > </div> '
+                        +' <div id=\"TrysMsg\" >  </div> ';
+                    $('#BasicData').html(str);
+                    DrawNewMessageCounts();
+                    //console.log("BasicData");
+                    DrawUserLoginTrys();
+                }
+        function DrawNewMessageCounts(){
+            var data={
+                            param0 : "Mail.Mail",
+                            param1 : "getNewMessages"
+            };
+            $.ajax({ 
+                    url : "/getJCI",
+                    data : data,
+                    type : "post",
+                    cache : false,
+                    async : true,
+                    dataType:'json',
+                    success : function(data) {
+                        var Msg = getName('لا يوجد رسائل| No New Messages',Lang || "A") ;
+                            if(data && data['count']> 0){
+                                Msg = '<a  href=\"#\" id =\"newMsgs\"> '
+                                    +' <bdi>  '+data['count']+' '
+                                    + getName(' رسالة جديدة| New Messages ',Lang || "A")
+                                    +'</bdi>   </a>';	 
+                            }
+                        if($('#EmailMsg').length == 0) {
+                          $("#BasicData").append(' <div id=\"EmailMsg\" align=\"center\" > </div> ');  
+                        }
+                        $('#EmailMsg').html(Msg);
+                    },
+                    error : function() {
+                    }
+                });
+        }
+        function DrawUserLoginTrys(){
+            //console.log("BasicData");
+            $.ajax({
+            url: "/getJCI",
+            type: "POST",
+            cache: false,
+            async: true,
+            data: {
+                param0: "Reports.RegisterCert",
+                param1: "UserLoginTrys"
+            },
+            beforeSend: function(){
+                $(".ui-effects-wrapper").remove();
+            },
+            success: function(d){
+                var str = "<table align='center' style='direction:" + dir + ";width:80%'>" ;
+                data = jQuery.parseJSON(d);
+                if (data) {
+                    var oldSt, newSt = '';
+                    for (var i = 0; i < data.length; i++) {
+                        oldSt = data[i].tryStatus;
+                        if (oldSt != newSt) {
+                            str += '<tr><td colsapn=3 style="height:35px;padding:3px">' + (oldSt == 'True' ? getName('اخر محاولة دخول صحيحة|Last successful login') : getName(' محاولة دخول خطأ |Failed login')) + '<td></tr>'
+                            str += '<tr style="height:25px;background-color:#5ab1cd;color:white;border:1px solid #5ab1cd;"><th >' + getName('اليوم|Day') + '</th><th>' + getName('الوقت|Time') +
+                            '</th><th > IP </th></tr>'
+                        }
+                        str += '<tr style="height:35px;border:1px solid #5ab1cd;"><td style="text-align:center">' + data[i].logDate.split(' ')[0] + '</td><td style="direction:ltr;text-align:center">' + data[i].logDate.split(' ')[1] + ' ' + data[i].logDate.split(' ')[2] +
+                        '</td><td style="text-align:center"> ' +
+                        data[i].IP +
+                        '</td></tr>'
+                        newSt = oldSt;
+                    }
+                }
+                str += "</table>";
+                if($('#TrysMsg').length == 0) {
+                    $("#BasicData").append(' <div id=\"TrysMsg\" > </div> ');  
+              }
+              $('#TrysMsg').html(str);
+              //  DesignFrame(getName('محاولات دخول سابقة |Previous login Trys'), str, true);
+            },
+            complete: function(jqXHR, textStatus){
+                $.unblockUI();
+                $(document).ajaxStop($.unblockUI);
+                return false;
+            },
+            error: function(request, status, error){
+                str = " <div>error </div>";
+            }
+        });
+        }
+        
+        $("div").delegate("#EmailMsg", "click", function() {
+            $('#mailSubSys').closest('a').trigger('click', [function(){
+                            $('#urmCount').closest('a').trigger('click');                            
+                        }
+                ]);
+        });
+            </script>
+       
+        </body>
+        </html>
