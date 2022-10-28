@@ -16,7 +16,7 @@ jobs:
       - name: push
         run: |
           docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-          docker push $DOCKER_USERNAME/back:$COMMIT_ID
+          docker push $DOCKER_USERNAME/wai:$COMMIT_ID
       - name: deploy
         if: github.ref == 'refs/heads/main'
         uses: appleboy/ssh-action@master
