@@ -26,5 +26,5 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: 22
           envs: DOCKER_USERNAME,COMMIT_ID
-          script: /home/waiDevOpsAdmin/test/deploy_script.sh back $DOCKER_USERNAME/back:$COMMIT_ID
+          script: /home/waiDevOpsAdmin/test/deploy_script.sh wai $DOCKER_USERNAME/wai:$COMMIT_ID
         
